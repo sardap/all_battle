@@ -1,0 +1,22 @@
+[package]
+name = "all-battle-run"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+all-battle-core = { path = "../core/" }
+all-battle-gen = { path = "../gen/", optional = true }
+all-battle-web = { path = "../web/", optional = true }
+actix-web = { version = "4.8.0", optional = true }
+diesel = { version = "2.2.1", features = ["returning_clauses_for_sqlite_3_35", "sqlite"] }
+lazy_static = "1.5.0"
+structopt = "0.3.26"
+log = "0.4.22"
+simple_logger = "5.0.0"
+
+[features]
+default = []
+elf_support = []
+gen = ["all-battle-gen"]
+web = ["all-battle-web", "actix-web"]

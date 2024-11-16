@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "types.h": "c"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/videos": true,
+    },
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "actix",
+        "chrono",
+        "dewford",
+        "lavaridge",
+        "mauville",
+        "petalburg",
+        "rusturf",
+        "verdanturf"
+    ],
+    "rust-analyzer.testExplorer": true
+}

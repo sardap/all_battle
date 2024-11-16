@@ -1,0 +1,15 @@
+assets/gba_bios.bin
+assets/.*.gba
+database.sql
+.logs
+video_work/
+videos/
+diesel.toml
+target/
+clone.sh
+game/
+frontend/public
+database.sql.working
+database.sql.old
+tools/crop/
+tools/

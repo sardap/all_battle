@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = ["core", "gen", "web", "run"]
+
+default-members = ["run"]
+
+
+[profile.dev]
+debug = true
+
+[profile.release]
+opt-level = "z"
+debug = false
+
+[profile.release-dev]
+inherits = "release"
+debug = true
+debug-assertions = false
+
+[profile.release-lto]
+inherits = "release"
+lto = true

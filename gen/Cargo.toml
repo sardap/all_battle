@@ -1,0 +1,16 @@
+[package]
+name = "all-battle-gen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+all-battle-core = { path = "../core/" }
+chrono = { version = "0.4.38", features = ["clock"] }
+rand = "0.8.5"
+serde = "1.0.203"
+serde_derive = "1.0.203"
+serde_json = "1.0.118"
+diesel = { version = "2.2.1", features = ["returning_clauses_for_sqlite_3_35", "sqlite"] }
+lazy_static = "1.5.0"
+actix-web = "4.8.0"
+log = "0.4.22"

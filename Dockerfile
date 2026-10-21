@@ -8,7 +8,7 @@ COPY ./frontend .
 RUN npm run build
 
 # -------------- BACKEND BUILDER ----------------
-FROM rust:1.79.0-buster AS backend_builder
+FROM rust:latest AS backend_builder
 
 RUN mkdir -p /app/src
 WORKDIR /app
@@ -26,7 +26,7 @@ WORKDIR /app/run
 RUN cargo build --release --features web
 
 # -------------- RUNNER ----------------
-FROM debian:buster-20230411-slim
+FROM debian:latest
 
 RUN apt-get update && apt-get install -y pkg-config libssl-dev libpq-dev ca-certificates sqlite3 curl
 
